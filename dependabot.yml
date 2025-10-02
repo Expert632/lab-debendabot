@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"        # ou "maven", "pip", "composer", "bundler", "docker", "terraform", etc.
+    directory: "/"                 # dossier racine du projet contenant package.json
+    schedule:
+      interval: "daily"            # daily | weekly | monthly
+    open-pull-requests-limit: 10
+    # Optional: grouping example
+    # allow:
+    #   - dependency-type: "direct"
